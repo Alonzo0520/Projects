@@ -8,7 +8,7 @@ def choose_word():
     return random.choice(word_list)
 
 def display_word(word, guessed_letters):
-    "Displays the word with underscores for unguessed letters"
+    #Displays the word with underscores for unguessed letters
     display = ""
     for letter in word:
         if letter in guessed_letters:
@@ -26,7 +26,7 @@ def guess_letter_or_word():
             return guess
             print("Please enter a single letter or a word")
 def play_game():
-    """Main function to play the game."""
+    #Main function to play the game.
     word_to_guess = choose_word()
     guessed_letters = []
     attempts = 6
